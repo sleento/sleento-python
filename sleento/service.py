@@ -6,6 +6,11 @@ class Client():
     SleentO Client account manager class
     """
     def __init__(self, cid, auth_token, *args, **kwargs):
+        """Authenticate
+
+        :cid             : The client id
+        :auth_token      : The authentication token
+        """
         self.cid = cid
         self.auth_token = auth_token
 

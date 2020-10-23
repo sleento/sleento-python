@@ -9,11 +9,11 @@ pip install sleento
 ### Usage
 
 ```py
-from sleento import Client, Message
+from sleento.service import Client, Message
 
 client = Client(
-            cid='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
-    auth_token='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+    cid='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', # replace with your cid
+    auth_token='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' # your auth_token
 )
 
 message = Message(
@@ -22,7 +22,7 @@ message = Message(
     body="Hello World"
 )
 
-res = message.send()
+res = message.send() # send the message
 
 print(res.status_code, res.text)
 ```
