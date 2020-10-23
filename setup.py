@@ -6,7 +6,7 @@ with open('README.md') as readme_file:
 setup(
     name='sleento',
     packages=find_packages(),
-    version='0.0.2',
+    version='0.0.3',
     description='SleentO Python package for sending sms to your customer',
     author='Ged-flod',
     author_email='magenta.sleento@gmail.com',
